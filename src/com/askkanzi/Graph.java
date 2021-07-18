@@ -13,13 +13,15 @@ public class Graph {
     // constructor
     public Graph(){
         vertexList = new Vertex[MAX_VERTS];
+
         adjMat = new int[MAX_VERTS][MAX_VERTS]; // adjacency matrix
         nVerts = 0;
         for(int j=0; j<MAX_VERTS; j++)  // set adjacency matrix to 0
             for(int k=0; k<MAX_VERTS; k++)  // matrix to 0
                 adjMat[j][k] = 0;
-        // theStack = new StackX();
-        theQueue = new Queue();
+
+        theStack = new StackX();
+//        theQueue = new Queue();
     }   // end constructor
 
     // argument is label
@@ -35,6 +37,14 @@ public class Graph {
     public void displayVertex(int v){
         System.out.print(vertexList[v].label);
     }
+
+    // returns an unvisited vertex adj to v
+    public int getAdjUnvisitedVertex(int v){
+        for(int j=0; j<nVerts; j++)
+            if(adjMat[v][j]==1 && vertexList[j].wasVisited==false)
+                return j;
+        return -1;
+    }   // end getAdjUnvisitedVertex()
 
     // depth-first search
     public void depthFirstSearch(){
@@ -84,15 +94,32 @@ public class Graph {
             vertexList[j].wasVisited = false;
     }   // end bfs
 
+    // minimum spanning tree (depth first)
+    public void minimumSpanningTree(){
+                                                     // start at vertex 0
+        vertexList[0].wasVisited = true;            // mark it
+        theStack.push(0);                         // push it
 
+        while(!theStack.isEmpty()){                 // until stack empty
 
+            int currentVertex = theStack.peek();    // get stack top
+            int v = getAdjUnvisitedVertex(currentVertex);   // get next unvisited neighbor
 
-    // returns an unvisited vertex adj to v
-    public int getAdjUnvisitedVertex(int v){
-        for(int j=0; j<nVerts; j++)
-            if(adjMat[v][j]==1 && vertexList[j].wasVisited==false)
-                return j;
-        return -1;
-    }   // end getAdjUnvisitedVertex()
+            if(v == -1)                               // if no more neighbors
+                theStack.pop();                     // pop it away
+            else {                                   // got a neighbor
+                vertexList[v].wasVisited = true;    // mark it
+                theStack.push(v);                   // push it
 
-}   // end class Graph
+                displayVertex(currentVertex);       // display edge from currentVertex to v
+                displayVertex(v);
+
+                System.out.print(" ");
+            }
+        }   // end while(stack not empty)
+
+        // stack is empty, so we're done
+        for(int j=0; j<nVerts; j++)             // reset flags
+            vertexList[j].wasVisited = false;
+    }   // end tree
+}// end class Graph
