@@ -12,9 +12,7 @@ public class StackX {
     }   // end constructor
 
     // put item on stack
-    public void push(int j){
-        st[++top] = j;
-    }
+    public void push(int j){ st[++top] = j; }
 
     // take item off stack
     public int pop(){
@@ -30,4 +28,5 @@ public class StackX {
     public boolean isEmpty(){
         return (top == -1);
     }
+
 }   // end class StackX
