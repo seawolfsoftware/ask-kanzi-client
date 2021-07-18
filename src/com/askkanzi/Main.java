@@ -4,17 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        LexigramProduct lexigramProduct = new LexigramProduct.Builder("LANA", "EAT").build();
-//        System.out.println("Lexigram product is: " + lexigramProduct);
-        // Check if the product matches a correlation
-        // if so, then the grammar is verified and the utterance is valid
-
         Graph theGraph = new Graph();
         theGraph.addVertex('A');    // 0 (start for depth-first search)
-        theGraph.addVertex('B');
-        theGraph.addVertex('C');
-        theGraph.addVertex('D');
-        theGraph.addVertex('E');
+        theGraph.addVertex('B');    // 1
+        theGraph.addVertex('C');    // 2
+        theGraph.addVertex('D');    // 3
+        theGraph.addVertex('E');    // 4
 
         theGraph.addEdge(0, 1);         // AB
         theGraph.addEdge(1, 2);         // BC
@@ -22,7 +17,8 @@ public class Main {
         theGraph.addEdge(3, 4);         // DE
 
         System.out.print("Visits: ");
-        theGraph.depthFirstSearch();
+//        theGraph.depthFirstSearch();
+        theGraph.breadthFirstSearch();
         System.out.println();
 
     }   // end main()
