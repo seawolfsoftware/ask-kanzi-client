@@ -7,6 +7,7 @@ public class Graph {
     private int adjMat[][];             // adjacency matrix
     private int nVerts;                 // current number of vertices
     private StackX theStack;
+    private Queue theQueue;
 
 
     // constructor
@@ -17,7 +18,8 @@ public class Graph {
         for(int j=0; j<MAX_VERTS; j++)  // set adjacency matrix to 0
             for(int k=0; k<MAX_VERTS; k++)  // matrix to 0
                 adjMat[j][k] = 0;
-        theStack = new StackX();
+        // theStack = new StackX();
+        theQueue = new Queue();
     }   // end constructor
 
     // argument is label
@@ -58,6 +60,31 @@ public class Graph {
         for(int j=0; j<nVerts; j++)         // reset flags
             vertexList[j].wasVisited = false;
     }   // end dfs
+
+
+    // breadth-first search
+    public void breadthFirstSearch(){
+                                            // begin at vertex 0
+        vertexList[0].wasVisited = true;    // mark it
+        displayVertex(0);                // display it
+        theQueue.insert(0);                             // insert at tail
+        int v2;
+
+        while(!theQueue.isEmpty()){         // until queue is empty,
+            int v1 = theQueue.remove();     // remove vertex at head until it has no unvisited neighbors
+            while((v2=getAdjUnvisitedVertex(v1)) != -1){    // get one
+                vertexList[v2].wasVisited = true;           // mark it
+                displayVertex(v2);                          // display it
+                theQueue.insert(v2);                        // insert it
+            }   // end while
+        }   // end while (queue not empty)
+
+        // queue is empty, so we're done
+        for(int j=0; j<nVerts; j++)             // reset flags
+            vertexList[j].wasVisited = false;
+    }   // end bfs
+
+
 
 
     // returns an unvisited vertex adj to v
