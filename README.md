@@ -1,35 +1,38 @@
 # ASK Kanzi
 ## Client program
 
-The ASK Kanzi client program will be the main() method which Kanzi and other apes, dogs, cats, elephants, birds, use to:
+The ASK Kanzi client program will be the `main()` method which Kanzi and other apes, dogs, cats, elephants, birds, use to:
  * communicate linguistically with one another using lexigrams 
  * control their environment with remote devices
 
 
-# Code
-The program is written in Java.
+## Code
+The program is written in `Java`.
 
 * ## Classes implemented
-  * Vertex
-  * Edge
-  * Graph 
-  * Stack(X) 
-  * Queue
-  * PriorityQ(ueue)
+  * `Vertex`
+  * `Edge`
+  * `Graph`
+  * `Stack(X)` 
+  * `Queue`
+  * `PriorityQ(ueue)`
 
 *  ## Classes to be implemented
-    * Lexigram
-    * LexigramProduct
+    * `Lexigram`
+    * `LexigramProduct`
 
 *  ## Algorithms implemented
-    * Depth-first search
-    * Breadth-first search
-    * Minimum spanning tree (depth first)
-    * Topological sort
+    * `Depth-first search`
+    * `Breadth-first search`
+    * `Minimum spanning tree` (depth first)
+    * `Topological sort`
 
 ## Research Paper Repository
 
-The following papers are included in the repository's /reference folder. The Paper # corresponds to the source's index file, a PDF.
+The `Paper #` corresponds to the source's index file, a PDF. The papers are listed in descending chronological order and may be found at the folder linked here `https://mega.nz/folder/jJpwRZJZ#k-NEJkGmGiAvHiPUwt8Ipg`. You must request permission from `chaz@seawolfsoftware.io` to access this folder.
+
+* Total size: __61.0 MB__
+* Contains: 48 files
 
 ### Paper Table
 
