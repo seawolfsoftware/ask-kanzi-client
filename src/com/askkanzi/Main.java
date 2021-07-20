@@ -32,8 +32,8 @@ public class Main {
 //        theGraph.topologicalSort();
 
         int maxSize = 100;          // array size
-        HighArray arr;              // reference to array
-        arr = new HighArray((maxSize));     // create the array
+        OrderedArray arr;              // reference to array
+        arr = new OrderedArray((maxSize));     // create the array
 
         arr.insert(77);
         arr.insert(99);
@@ -48,12 +48,14 @@ public class Main {
 
         arr.display();              // display items
 
-        int searchKey = 35;         // search for item
+        int searchKey = 55;         // search for item
 
-        if(arr.find(searchKey))
+        if(arr.find(searchKey) != arr.size())
             System.out.println("Found " + searchKey);
         else
             System.out.println("Can't find " + searchKey);
+
+        arr.display();              // display items
 
         arr.delete(00);
         arr.delete(55);
