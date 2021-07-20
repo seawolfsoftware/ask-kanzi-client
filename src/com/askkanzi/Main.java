@@ -31,38 +31,32 @@ public class Main {
 //
 //        theGraph.topologicalSort();
 
-        int maxSize = 100;          // array size
-        OrderedArray arr;              // reference to array
-        arr = new OrderedArray((maxSize));     // create the array
+        int maxSize = 100;                          // array size
+        ClassDataArray arr;                         // reference to array
+        arr = new ClassDataArray(maxSize);        // create the array
 
-        arr.insert(77);
-        arr.insert(99);
-        arr.insert(44);
-        arr.insert(55);
-        arr.insert(22);
-        arr.insert(88);
-        arr.insert(11);
-        arr.insert(00);
-        arr.insert(66);
-        arr.insert(33);
+        arr.insert("Selph", "Chaz", 32);
+        arr.insert("Roberts", "Anysja", 25);
+        arr.insert("Savage-Rumbaugh", "Sue", 74);
 
-        arr.display();              // display items
+        arr.displayArray();              // display items
 
-        int searchKey = 55;         // search for item
+        String searchKey = "Selph";     // search for item
+        Person found;
+        found = arr.find(searchKey);
 
-        if(arr.find(searchKey) != arr.size())
-            System.out.println("Found " + searchKey);
+        if(found != null){
+            System.out.print("Found ");
+            found.displayPerson();
+        }
         else
             System.out.println("Can't find " + searchKey);
 
-        arr.display();              // display items
+        System.out.println("Deleting Selph");
 
-        arr.delete(00);
-        arr.delete(55);
-        arr.delete(99);
+        arr.delete("Selph");             // delete an item
 
-        arr.display();              // display items again
-
+        arr.displayArray();                         // display items again
 
         System.out.println();
     }   // end main()
