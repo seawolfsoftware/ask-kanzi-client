@@ -3,23 +3,30 @@ package com.askkanzi;
 
 public enum LexigramClasses {
 
-    AUTONOMOUS_ACTORS(Color.VIOLET),
-    SPACIAL_OBJECTS(Color.ORANGE),
-    INGESTIBLES(Color.RED),
-    PARTS_OF_BODY(Color.GREEN),
-    STATES_AND_CONDITIONS(Color.BLUEGREY),
-    ACTIVITIES(Color.BLUE),
-    PREPOSITIONS_DETERMINERS_PARTICLES(Color.BLACK),
-    AFFIRMATION(Color.WHITE),
-    SENTIMENTAL_MODIFIERS(Color.YELLOW);
+    AUTONOMOUS_ACTORS(Color.VIOLET, new String[]{"AP", "AV", "AO", "AM"}),
+    SPACIAL_OBJECTS(Color.ORANGE, new String[]{"FA", "FP", "TF", "CT", "WR"}),
+    INGESTIBLES(Color.RED, new String[]{"EU", "EM", "ED"}),
+    PARTS_OF_BODY(Color.GREEN, new String[]{"PB"}),
+    STATES_AND_CONDITIONS(Color.BLUEGREY, new String[]{"ST", "LS", "CD"}),
+    ACTIVITIES(Color.BLUE, new String[]{"VA", "VB", "VC", "VD", "VE", "VG", "VL", "VM", "VP", "VS", "VW"}),
+    PREPOSITIONS_DETERMINERS_PARTICLES(Color.BLACK, new String[]{"DC", "DD", "DO", "DP", "LP", "ID", "NF", "PP"}),
+    AFFIRMATION(Color.WHITE, new String[]{"YES"}),
+    SENTIMENTAL_MODIFIERS(Color.YELLOW, new String[]{"Query", "Please", "Negation", "Period"});
 
     private final Color color;
+    private final String[] classes;
 
-    LexigramClasses(Color color) {
+    LexigramClasses(Color color, String[] classes) {
+
         this.color = color;
+        this.classes = classes;
     }
 
     public Color getColor() { return color; }
+
+    public String[] getClasses(){
+        return classes;
+    }
 
 
 }
