@@ -16,6 +16,13 @@ The program is written in `Java`.
   * `Stack(X)` 
   * `Queue`
   * `PriorityQ(ueue)`
+  * `Person`
+  * `ClassDataArray`
+  * `OrderedArray`
+
+* ## Enums implemented
+  * `Color` 
+  * `LexigramClass` Semantic Color-Coding of Lexigrams
 
 *  ## Classes to be implemented
     * `Lexigram`
@@ -27,16 +34,19 @@ The program is written in `Java`.
     * `Minimum spanning tree` (depth first)
     * `Topological sort`
 
-## Research Paper Repository
 
-The `Paper #` corresponds to the source's index file, a PDF. The papers are listed in descending chronological order and may be found at the folder linked here `https://mega.nz/folder/jJpwRZJZ#k-NEJkGmGiAvHiPUwt8Ipg`. You must request permission from `chaz@seawolfsoftware.io` to access this folder.
+
+
+## Research Papers
+
+The `Paper` # corresponds to the source's index file number. The papers are listed in descending chronological order and may be found at the folder linked here `https://mega.nz/folder/jJpwRZJZ#k-NEJkGmGiAvHiPUwt8Ipg`. You must request permission from `chaz@seawolfsoftware.io` to access this folder.
 
 * Total size: __61.0 MB__
 * Contains: 48 files
 
-### Paper Table
 
-|   Paper#  |   Source Information                                                                                                                                                                                                                                                                                                        |   Year  |
+
+|   Paper  |   Source Information                                                                                                                                                                                                                                                                                                        |   Year  |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
 |   12      |   Engineering and Structural materials Flexible wearable sensors - an update in view of touch-sensing Chi Cuong Vu,Sang Jin Kim &Jooyong Kim Pages 26-36 \| Received 31 Aug 2020, Accepted 27 Nov 2020, Accepted author version posted online: 04 Jan 2021, Published online:31 Mar 2021                                    |   2021  |
 |   17      |   Sibiryakova, Olga V et al. “Polyphony of domestic dog whines and vocal cues to body size.” Current zoology vol. 67,2 (2021): 165-176. doi:10.1093/cz/zoaa042                                                                                                                                                              |   2021  |
