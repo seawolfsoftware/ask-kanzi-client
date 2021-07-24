@@ -23,6 +23,7 @@ The program is written in `Java`.
 * ## Enums implemented
   * `Color` 
   * `LexigramClass` Semantic Color-Coding of Lexigrams
+  * `LexigramOperationalClass`
 
 *  ## Classes to be implemented
     * `Lexigram`
