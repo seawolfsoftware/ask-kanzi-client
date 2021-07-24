@@ -16,6 +16,10 @@ public class Main {
             index++;
         }
 
+        Color autonomousActorsColor = LexigramClasses.AUTONOMOUS_ACTORS.getColor();
+        System.out.println(autonomousActorsColor);
+
+        System.out.println(Arrays.toString(LexigramClasses.values()));
 
 
     }   // end main()
