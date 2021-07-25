@@ -86,5 +86,25 @@ The `Paper` # corresponds to the source's index file number. The papers are list
 |   19      |   WHY THE MIND IS IN THE HEAD? Warren S. McCulloch   First published: September 1950 https://doi.org/10.1111/j.1746-8361.1950.tb01019.xCitations: 5   1 Delivered at the HIXON SYMPOSIUM, California Institute of Technology. September 1948.                                                                               |   1950  |
 |   7       |   Glasersfeld E. von & Terzi P. (1965) Automatic English sentence analysis. Final Report. AFOSR Grant AF EOAR 64–54. IDAMI Language Research Section, Milan.                                                                                                                                                                                                                                                                            |     1965    |
 |   X       |   Glasersfeld E. von (1993) Warum sprechen wir, und die Schimpansen nicht? (Why do we speak, and chimpanzees do not?) [pdf]. In: Hosp I. (ed.) Sprachen des Menschen, Sprache der Dinge (Languages of mankind, language of things). Südtiroler Kulturinstitut, Bolzano: 53–61. Available at http://vonglasersfeld.com/156                                                                                                                                                                                                                                                                   |    1993     |
+Rumbaugh D. M. (2007) Ernst von Glasersfeld’s Contributions to the LANA Project. Constructivist Foundations 2(2-3): 29–31.
+
+Rumbaugh D. M., Gill T. V. & Glasersfeld E. von (1974) Language in man, monkey, and machines (Reply to Mistler & Lachman). Science 185: 872–873.
+
+Rumbaugh D. M., Gill T. V. & Glasersfeld E. von (1976) La lectura y el completado do oraciones, realizados por un chimpance. In: Sanchez de Zavala V. (ed.) Sobre el lenguaje de los antropoidesSigle Veintiuno, Madrid: 137–146.
+
+Rumbaugh D. M., Gill T. V., Glasersfeld E. von, Warner H. & Pisani P. (1975) Conversations with a chimpanzee in a computer-controlled environment. Biological Psychiatry 10(6): 627–641.
+
+Rumbaugh D. M., Glasersfeld E. von, Gill T. V., Warner H., Pisani P., Brown J. V. & Bell T. V. (1975) The language skills of a young chimpanzee in a computer-controlled training situation. In: Tuttle R. H. (ed.) Socioecology and psychology of primatesMouton, The Hague: 391–402.
+
+Rumbaugh D. M., Glasersfeld E. von, Warner H., Pisani P. & Gill T. V. (1974) Lana (chimpanzee) learning language: A progress report. Brain and Language 1: 205–212.
+
+Rumbaugh D. M., Glasersfeld E. von, Warner H., Pisani P., Gill T. V. & Bell C. L. (1973) Exploring the language skills of Lana Chimpanzee. International Journal of Symbology 4(2): 1–9.
+
+Rumbaugh D. M., Warner H. & Glasersfeld E. von (1977) The Lana project: Origin and tactics. In: Rumbaugh D. M. (ed.) Language learning by a chimpanzeeAcademic Press, New York: 87–90.
+
+Rumbaugh D., Gill T. V. & Glasersfeld E. von (1973) Reading and sentence completion by a chimpanzee. Science 182: 731–733.
+
+Rumbaugh D., Glasersfeld E. von, Warner H., Pisani P., Gill T. V. & Bell C. L. (1973) A computer-controlled language training system for investigation of language skills in young apes. Behavioral Research Methods and Instrumentation 5(5): 382–390.
+
 
 
